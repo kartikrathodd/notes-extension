@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-container">
+        <h1 class="title">Web Notes
+      </div>
+    </div>
+    <div class="style-buttons">
+      <button id="boldButton">B</button>
+      <button id="italicButton">I</button>
+      <button id="underlineButton">U</button>
+      <button id="unorderedListButton">UL</button>
+      <button id="orderedListButton">OL</button>
+      <input type="color" id="textColorPicker" value="#000000">
+    </div>
+    <textarea id="noteInput" placeholder="Type your note here..."></textarea>
+    <div class="button-container">
+      <button id="saveButton">Save</button>
+      <button id="downloadButton">Download</button>
+    </div>
+    <button id="newNoteButton" class="top-left">+</button>
+  </div>
+  <button id="helpButton" class="bottom-right">?</button>
+
+  <div id="sidebar" class="sidebar hidden">
+    <button id="closeSidebar" class="close-button">X</button>
+    <h2>Notes</h2>
+    <div id="folders" class="folders">
+      <!-- Add folder structure here -->
+    </div>
+    <div id="notesContainer" class="notes-container">
+      <!-- Add your saved notes here -->
+    </div>
+  </div>
+
+  <!-- Notification -->
+  <div id="notification" class="notification"></div>
+
+  <script src="content.js"></script>
+</body>
+</html>
